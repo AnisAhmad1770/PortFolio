@@ -1,40 +1,16 @@
-import "./Projects.scss"
+ import "./Projects.scss"
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import { useEffect, useState } from "react";
-import Loader from "react-loaders";
-
-
-
-
+ import { useEffect, useState } from "react";
+// import Loader from "react-loaders";
+// // import Card from "./Card/Card.js";
+// import Card from "./Card/Card";
 
 const Projects = () => {
-    const [letterClass, setLetterClass] = useState('text-animate');
-    const projects = [
-        {
-          name: 'Project 1',
-          description: 'A description of your project 1.',
-          demoLink: 'https://example.com/demo1',
-        },
-        {
-          name: 'Project 2',
-          description: 'A description of your project 2.',
-          demoLink: 'https://example.com/demo2',
-        },
-        // Add more projects as needed
-      ];
+ 
+
+  const [letterClass, setLetterClass] = useState('text-animate');
     
-      const ProjectCard = ({ project }) => {
-        return (
-          <div className="project-card">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-              Demo
-            </a>
-            
-          </div>
-        );
-      };
+      
     useEffect(() => {
       const idTimeOut = setTimeout(() => {
         setLetterClass('text-animate-hover')
@@ -42,9 +18,38 @@ const Projects = () => {
   
       return () => clearTimeout(idTimeOut);
     }, [])
+  const ProjectCard = ({ project }) => {
+
+
+    return (
+      <div className="project-card">
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+       <button> <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+          Link to Code
+        </a>
+         </button>
+      </div>
+    );
+  };
+
+  const projects = [
+    {
+      name: 'React Admin Dashboard',
+      description: 'A clean and modern React Admin Dashboard built using React.js, React Router, and Material UI. This project aims to provide a user-friendly interface for managing and visualizing data in a responsive and efficient manner.',
+      demoLink: 'https://github.com/AnisAhmad1770/React-Admin-DashBoard',
+    },
+    {
+      name: 'Project 1',
+      description: 'A description of your project 1.',
+      demoLink: 'https://example.com/demo1',
+    },
+   
+    // Add more projects as needed
+  ];
+
   return (
-    <>
-    <div className="container project-page">
+    <>    <div className="project-page">
       <div className="text-zone">
        <h1>
         <AnimatedLetters
@@ -56,19 +61,19 @@ const Projects = () => {
        
       </div>
     </div>
-    <h2>My Projects</h2>
+    <div className="app-container">
       <div className="project-list">
         {projects.map((project, index) => (
           <ProjectCard project={project} key={index} />
         ))}
       </div>
-    <Loader type="pacman"/>
+    </div></>
+  );
 
-    </>
-  )
-}
+};
 
-export default Projects
+export default Projects;
+
 
 
 

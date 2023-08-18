@@ -1,10 +1,55 @@
-.project-card{
+.app-container{
     position: absolute;
-        left: 30%;
-        top: 20%;
-        transform: translate(-15%);
+        left: 15%;
+        top: 40%;
+        transform: translate(-25%);
         width: 35%;
         vertical-align: middle;
         display:table-cell;
         max-height: 90%;
+        animation: fadeIn 1s 2s backwards;
 }
+
+
+.project-card {
+    width: 200px;
+    height: 300px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #0d3043;
+    
+    
+  }
+  
+  .project-card h2 {
+    margin-top: 0;
+    color: yellow;
+    font-weight: 600;
+  }
+  
+  .project-card p {
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  
+  .project-card a {
+    display: block;
+    color: #020509;
+    text-decoration: underline;
+    font-weight: bold;
+    
+  }
+  .project-card button{
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 25%;
+    background: #ffd700;
+    position: relative;
+    border: 2px solid #fff;
+  }
+  
