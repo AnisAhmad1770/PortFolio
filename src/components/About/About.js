@@ -2,7 +2,7 @@ import "./About.scss"
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
+import {  faAws,   faHtml5, faJsSquare, faNode, faReact, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import Loader from "react-loaders";
 const About = () => {
   
@@ -26,34 +26,29 @@ const About = () => {
         idx={15}
         />
        </h1>
-       <p>I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.</p>
-       <p>I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.</p>
-       <p>If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!</p>
+       <p>A recent computer systems graduate, I am an emerging React Developer with a strong affinity for JavaScript. Despite having six months of personal experience rather than professional exposure, my dedication to refining my skills is evident through my React-focused projects. These endeavors have equipped me with a solid understanding of front-end development principles, and I am excited to contribute my fresh perspective and technical acumen to dynamic development teams.</p>
+       <p>With a recent entry into the field, I bring a modern perspective to React development. My JavaScript proficiency and commitment to mastering React enable me to contribute effectively to web projects, while my collaborative nature ensures seamless teamwork.</p>
+       <p>Driven by a passion for crafting engaging user interfaces, I offer a solid foundation in JavaScript and a keen interest in React. My adaptability and dedication to excellence position me as a valuable asset to teams seeking innovative web solutions.</p>
       </div>
       <div className="stage-cube-cont">
         <div className="cubespinner">
           <div className="face1">
-            <FontAwesomeIcon icon={faAngular} color="#DD0031"/>
-          </div>
-          <div className="face2">
-            <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
-          </div>
-          <div className="face3">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
-          </div>
-          <div className="face4">
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4"/>
-          </div>
-          <div className="face5">
             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
           </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faNode} color="green"/>
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faAws} color="#28A4D9"/>
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faSquareGithub} color="#171515"/>
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
           <div className="face6">
-            <FontAwesomeIcon icon={faGitAlt} color="#171515"/>
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4"/>
           </div>
 
         </div>

@@ -66,7 +66,7 @@ nav{
     }
     &:first-child{
         &::after{
-            content: 'Home';
+            content: 'HOME';
         }
     }
 
@@ -79,6 +79,11 @@ a.about-link{
 a.contact-link{
     &:after{
         content: 'CONTACT';
+    }
+}
+a.project-link{
+    &:after{
+        content: 'WORK';
     }
 }
 a.active{

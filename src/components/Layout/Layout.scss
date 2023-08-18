@@ -37,10 +37,12 @@ font-family: 'La Belle Aurore ';
     transform-style: preserve-3d;
     animation: fadeIn  1s forwards;
     animation-delay: 1s;
-}
+    padding: 10px;
+    margin: 10px;}
 
 .about-page,
-.contact-page{
+.contact-page,
+.project-page {
     .text-zone{
         position: absolute;
         left: 10%;

@@ -20,9 +20,10 @@ const Contact = () => {
 
     emailjs.sendForm('service_5p3qmxr', 'template_z6p3txg', refForm.current,'8r5Zd-uvFzouAaWNK')
     .then(function(response) {
-       alert('Message sent ')
+      alert('Message Successfuly sent')
+      window.location.reload(false)
     }, function(error) {
-       console.log('FAILED...', error);
+      alert('Failed to send message, Retry Please')
     });
   }
   return (
