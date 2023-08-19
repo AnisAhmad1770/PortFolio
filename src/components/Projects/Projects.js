@@ -40,10 +40,21 @@ const Projects = () => {
       demoLink: 'https://github.com/AnisAhmad1770/React-Admin-DashBoard',
     },
     {
-      name: 'Project 1',
-      description: 'A description of your project 1.',
-      demoLink: 'https://example.com/demo1',
+      name: 'Redux Store',
+      description: 'This project involves creating a Redux store to manage state effectively. It includes features like adding/removing items to/from a cart and displaying products using responsive card layouts. Actions and reducers handle state updates, components connect via `connect`, and the UI is enriched with visually appealing cards. ',
+      demoLink: 'https://github.com/AnisAhmad1770/Redux-Store',
     },
+    {
+      name: 'Portfolio',
+      description: 'Crafted an engaging portfolio website using React, incorporating SVG animations with GSAP, interactive letter animations via Animate.css, a playful Pacman element, custom 3D CSS animations, font icons, and a dynamic contact form powered by EmailJS for a unique and captivating user experience. ',
+      demoLink: 'https://github.com/AnisAhmad1770/PortFolio',
+    },
+    {
+      name: 'Grocerry Bud',
+      description: '"Grocery Bud" is a React app designed for easy grocery list management. With a clean and intuitive interface, users can add, update, and remove items effortlessly. The ability to check off purchased items and clear the list quickly enhances usability. Open to contributions, this app offers a straightforward solution for efficient grocery shopping. ',
+      demoLink: 'https://github.com/AnisAhmad1770/GrocerryBud',
+    },
+   
    
     // Add more projects as needed
   ];
