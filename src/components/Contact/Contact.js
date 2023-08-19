@@ -39,9 +39,7 @@ const Contact = () => {
             />
         </h1>
         <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+        I am actively seeking internship opportunities in React and web development, particularly on ambitious or substantial projects. If you have any inquiries or want to get in touch, please feel free to reach out using the form below.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
