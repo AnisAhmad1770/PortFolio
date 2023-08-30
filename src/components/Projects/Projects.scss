@@ -58,4 +58,72 @@
     background: #ffd700;
     border: 2px solid #fff;
   }
+
+  @media only screen and ( max-width:767px) {
+    .app-container{
+      position: absolute;
+          left: 15%;
+          top: 30%;
+          transform: translate(-10%);
+          width: 100%;
+          vertical-align: middle;
+          display:table-cell;
+          max-height: 90%;
+          animation: fadeIn 1s 2s backwards;
+  }
   
+  
+  .project-card {
+      position: relative;
+      width: 100px;
+      height: 150px;
+      float: left;
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background: #0d3043;
+      
+      
+    
+     h2 {
+      text-align: center;
+      font-size: 10px;
+      margin-top: 0;
+      color: yellow;
+      font-weight: 600;
+    }
+    
+     p {
+      margin-bottom: 4px;
+      font-size: 5px;
+      color: #fff;
+      font-size:smaller;
+     height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+     a {
+      display: block;
+      color: #020509;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: smaller;
+      
+    }
+    button{
+      position: absolute;
+      bottom: 1px; 
+      right: 15px; 
+     text-decoration: none;
+      width: 100px;
+      height: 25px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background: #ffd700;
+      border: 2px solid #fff;
+    }
+  }
+  }
